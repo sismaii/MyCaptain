@@ -19,4 +19,4 @@ elif i[1]=='xls' or i[1]=='xlsx':
 elif i[1]=='css':
     print("The extension of the file is: Cascading Style Sheets")
 else:
-    print*"The extension of the file might be someother."
+    print("The extension of the file might be someother.")
