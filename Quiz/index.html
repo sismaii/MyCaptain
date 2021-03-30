@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Quiz</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- linking external style sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+
+	<!-- font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Header section -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="img">
+				<img src="images/quiz.png" alt="Logo" width="80px" height="80px;">
+			</div>
+			<h1>MyQuiz</h1>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				</ul>
+
+				<ul class="navbar-nav mt-2 mt-lg-0">
+					<li> 
+						<a href="#">HOME</a> 
+					</li>
+					<li> 
+						<a href="#">ABOUT</a> 
+					</li>
+					<li> 
+						<a href="#">QUIZZES</a> 
+					</li>
+					<li> 
+						<a href="#">CREATE QUIZ</a> 
+					</li>
+					<li> 
+						<a href="#">LOGIN</a> 
+					</li>
+					<li> 
+						<a href="#">HELP</a> 
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Home Section -->
+	<section id="home" class="container mt-3">
+		<h2>HOME</h2>
+		<hr>
+		
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Participate in various quiz competitions. Compete! Win!</p>
+				<form>					
+					<div id="participant" class="grid-container">
+						<div class="item1">
+							<h4>PARTICIPANT LOGIN</h4>
+						</div>
+  						<div class="item1">
+  							<input type="text" name="p_username" placeholder="username">
+  							<!--<i class="fa fa-user" aria-hidden="true"></i>-->
+  						</div>
+  						<div class="item1">
+							<input type="password" name="p_password" placeholder="password">
+						</div>
+  						<div class="item1">
+  							<input id="p_login" type="submit" name="p_submit" value="LOGIN">
+  						</div>  
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-2" style="margin: 0; top: 50%;">
+				<div class="grid-container">
+  					<div class="item1">
+  						<div id="or_line1" style="border-left: 5px solid #bbb; height: 120px; position: relative; left: 50%;"></div>
+  					</div>
+  					<div class="item1">							
+  						OR
+					</div>
+  					<div class="item1">
+  						<div id="or_line2" style="border-left: 5px solid #bbb; height: 120px; position: relative; left: 50%;"></div>
+  					</div>  
+				</div>
+			</div>
+
+			<div class="col-sm-5">
+				<p>Be the Quiz Master. Make your own Quiz and conduct it online.</p>
+				<form>
+					<div id="master" class="grid-container">
+						<div class="item1">
+							<h4>QUIZ MASTER LOGIN</h4>
+						</div>
+  						<div class="item1">
+  							<input type="text" name="m_username" placeholder="username">
+  						</div>
+  						<div class="item1">
+							<input type="password" name="m_password" placeholder="password">
+						</div>
+  						<div class="item1">
+  							<input id="m_login" type="submit" name="m_submit" value="LOGIN">
+  						</div>  
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="container">
+		<h2>ABOUT</h2>
+		<hr>
+		<p>MyQuiz platform helps you to build free public or private quiz competitions and conduct it online. Participants can register in the quiz and compete with others. Automatic and manual computation of the quiz can be done by the quiz master.</p>
+
+		<div style="text-align: center;">
+			<div class="card" style="display: inline-block; width: 18rem; margin: 10px; border-color: #bbb">
+  				<div style="text-align: center; padding-top: 30px;">
+  					<img src="images/male-profile-1.png" alt="profile" height="150px" width="150px">
+  				</div>
+  				<div class="card-body" style="text-align: center; margin-top: 0;">
+  					<label class="card-text"><b>Name1</b></label>
+					<p class="card-text" style="color:dodgerBlue">Co-Founder & CEO</p>
+					<p style="color:#999;"><i>"Now you can make quiz or participate in any quiz from anywhere in the world."</i></p>
+  				</div>
+			</div>
+			<div class="card" style="display: inline-block; width: 18rem; margin: 10px; border-color: #bbb">
+  				<div style="text-align: center; padding-top: 30px;">
+  					<img src="images/female-profile-1.png" alt="profile" height="150px" width="150px">
+  				</div>
+  				<div class="card-body" style="text-align: center; margin-top: 0;">
+  					<label class="card-text"><b>Name2</b></label>
+					<p class="card-text" style="color:dodgerBlue">Co-Founder</p>
+					<p style="color:#999;"><i>"We have made it easy for everyone to make quiz and conduct them."</i></p>
+  				</div>
+			</div>
+			<div class="card" style="display: inline-block; width: 18rem; margin: 10px; border-color: #bbb">
+  				<div style="text-align: center; padding-top: 30px;">
+					<img src="images/male-profile-2.png" alt="profile" height="150px" width="150px">  				
+				</div>
+  				<div class="card-body" style="text-align: center; margin-top: 0;">
+  					<label class="card-text"><b>Name3</b></label>
+					<p class="card-text" style="color:dodgerBlue">Admin</p>
+					<p style="color:#999;"><i>"Now you can make quiz or participate in any quiz from anywhere in the world."</i></p>
+  				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Quizzes section -->
+	<section id="quizzes" class="container">
+		<h2>QUIZZES</h2>
+		<hr>
+		<p>You can view all the upcoming quizzes.</p>
+		<a href="#">Upcoming</a>
+		<a href="#">Old</a>
+
+		<!-- List of Quizzes hosted -->
+		<div style="padding: 10px;">
+			<!-- Quiz Competiton Details -->
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Create Quiz Section -->
+	<section id="create_quiz" class="container">
+		<h2>Create Quiz</h2>
+		<hr>
+		<p>Make your own quiz. Be the quiz Master.</p>
+		<br><br>
+		<div>
+			<form>
+				<input type="text" name="quiz_name" placeholder="name of quiz"><br>
+				<input type="submit" name="create_quiz" value="CREATE QUIZ">
+			</form>
+		</div>
+		<br><br>
+	</section>
+
+	<!-- Help Section -->
+	<section id="help" class="container">
+		<h2>HELP</h2>
+		<hr>
+		<p>We are always here to help you.</p>
+
+		<div>
+			<div class="card">
+				<div style="margin: 10px;">
+					<img src="images/male-profile-3.png" alt="profile" height="150px" width="150px">
+				</div>
+				<label style="color: dodgerBlue; font-weight: bolder;">Name1</label>
+				<p>Helper1</p>
+				<p>Pleasure to help.</p>
+				<button class="btn btn-primary">CONTACT</button>
+			</div>
+			<div class="card">
+				<div style="margin: 10px;">
+					<img src="images/female-profile-2.png" alt="profile" height="150px" width="150px">
+				</div>
+				<label style="color: dodgerBlue; font-weight: bolder;">Name1</label>
+				<p>Helper2</p>
+				<p>Pleasure to help.</p>
+				<button class="btn btn-primary">CONTACT</button>
+			</div>
+			<div class="card">
+				<div style="margin: 10px;">
+					<img src="images/female-profile-3.png" alt="profile" height="150px" width="150px">
+				</div>
+				<label style="color: dodgerBlue; font-weight: bolder;">Name1</label>
+				<p>Helper3</p>
+				<p>Pleasure to help.</p>
+				<button class="btn btn-primary">CONTACT</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Feedback form -->
+	<section id="feedback" class="container">
+		<h2>Feedback</h2>
+		<hr>
+		<div>
+			<div class="card">
+				<p style="color: #888; font-style: italic;">Feedback1......</p>
+				<div style="text-align: right;">
+					<img src="images/contact-icon-2.png" width="20px" height="20px">
+					<label>User1</label>
+				</div>
+			</div>
+			<div class="card">
+				<p style="color: #888; font-style: italic;">Feedback2......</p>
+				<div style="text-align: right;">
+					<img src="images/contact-icon-2.png" width="20px" height="20px">
+					<label>User2</label>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top: 30px; padding-left: 10%; padding-right: 10%">
+			<form>
+				<textarea class="form-control" style="resize: none;"></textarea>
+				<input style="display: block;" class="btn btn-success" type="submit" name="feedback_submit" value="POST">
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<footer id="footer">
+		<div style="background-color: #2699FB; padding: 20px;">
+			<div style="display: inline-block;">
+				<h5>Subscribe to Quiz via Email</h5>
+				<p>Subscribe to quizzes, new update and news.</p>
+				<form>
+					<input class="form-control" type="email" name="subscribe_emial">
+					<input class="btn btn-dark mt-2" type="submit" name="subscribe" value="SUBSCRIBE">
+				</form>
+			</div>
+			<div style="float: right;padding-left: 5%;">
+				<h5>CUSTOMER SERVICE</h5>
+				<a href="#">Contact Us</a>
+				<a href="#">Registering & Payment</a>
+				<a href="#">FAQ</a>
+			</div>
+			<div style="float: right;padding-left: 5%;">
+				<h5>INFORMATION</h5>
+				<p>MyQuiz</p>
+				<a href="#">Work With Us</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms & Conditions</a>
+				<a href="#">Enquiries</a>
+			</div>
+			<div style="float: right;padding-left: 5%;">
+				<h5>CONTACT US</h5>
+				<p>+91 123456789</p>
+				<p>myquiz@email.com</p>
+				<a href="#">Create Quiz</a>
+			</div>			
+		</div>
+		<div style="background-color: black; height:50px;">
+			<p style="display: inline-block; margin-left: 10px; padding: 10px;">Copyright &copy; MyQuiz 2020</p>
+			<div style="float: right;">
+				<img src="images/instagram-icon-bw.png" alt="instagram" width="48px" height="35px">&nbsp;
+				<img src="images/twitter-icon-bw.png" alt="twitter" width="22px" height="22px">
+				<img src="images/facebook-icon-bw.png" alt="facebook" width="44px" height="44px">
+			</div>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
