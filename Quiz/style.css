@@ -1,0 +1,329 @@
+/* overall website */
+*{
+	font-family: Montserrat;
+}
+
+hr{
+	border: 2px solid grey;
+  	border-radius: 10px;
+  	margin-top: 0;
+}
+
+input{
+	outline: none;
+}
+
+.card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	width: 300px;
+	display: inline-block;
+	margin: 10px;
+}
+
+
+
+/* Header Section */
+header{
+	background-color: #1C2934;
+	color: white;
+	width: 100%;
+    /*position: fixed; 
+    padding: 10px 0;
+    top: 0;*/
+}
+
+header .img{
+	display: inline;
+}
+
+header h1{
+	display: inline;
+ 	left: 100px;
+}
+
+header ul{
+	list-style: none;
+	display: inline;
+}
+
+header li{
+	display: inline;
+	margin-right: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header li a{
+	text-decoration: none;
+	color: white;
+}
+
+header li a:hover{
+	text-decoration: none;
+	color: orange;
+}
+
+
+/* Home Section */
+#home input{
+	/*display: block;*/
+	text-align: center;
+ }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#home input[type="text"], input[type="password"] {
+	border: 2px solid #ccc;
+	color: #ccc;
+	border-radius: 20px;
+	font-size: 16px;
+	width: 80%;
+	height: 40px;
+	transition: 0.3s;
+}
+
+#home input[type="submit"] {
+	border: none;
+	border-radius: 20px;
+	font-size: 16px;
+	color: white;
+	width: 50%;
+	height: 40px;
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+#home ::placeholder { /* Firefox */
+  color: #ccc;
+  opacity: 1.0;
+}
+
+#home :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #ccc;
+ opacity: 1.0;
+}
+
+#home ::-ms-input-placeholder { /* Microsoft Edge */
+ color: #ccc;
+ opacity: 1.0;
+}
+
+#p_login {
+	background-color: #00FF33;
+}
+
+#m_login {
+	background-color: #0090FF;
+}
+
+#home input[type="submit"]:hover {
+	opacity: 1.0;
+	width: 55%
+	height: 42px;
+	font-weight: bolder;
+	border-color: grey;
+  	box-shadow: 0 0 8px 0 grey;
+}
+
+#home input[type="text"]:hover, input[type="password"]:hover {
+	border-color: #8ec7ff;
+	color: black;
+  	box-shadow: 0 0 4px 0 #8ec7ff;
+  	transition: 0.2s;
+}
+
+#home input[type="text"]:focus, input[type="password"]:focus {
+	border-color: dodgerBlue;
+	color: black;
+  	box-shadow: 0 0 8px 0 dodgerBlue;
+  	transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  #or_line1, #or_line2 {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+
+/* About section */
+#about {
+	margin-top: 100px;
+}
+
+
+
+/* Quizzes Section */
+#quizzes {
+	margin-top: 100px;
+}
+
+#quizzes a {
+	text-decoration: none;
+	padding-right: 50px;
+	font-weight: bolder;
+	font-size: 22px;
+}
+
+#quizzes a:hover {
+	text-decoration: none;
+	padding-right: 50px;
+	font-weight: bolder;
+}
+
+#quizzes .quiz_card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	width: 300px;
+	display: inline-block;
+	margin: 10px;
+	box-shadow: 0 0 16px 0 grey;
+}
+
+
+#quizzes .quiz_card label {
+	color: white;
+	padding: 5px;
+	border-radius: 20px;
+	width: 100px;
+	text-align: center;
+}
+
+#quizzes .quiz_card button {
+	text-align: center;
+	background-color: lime;
+	border: none;
+	color: white;
+	padding: 5px;
+	width: 120px;
+	border-radius: 20px;
+	opacity: 0.8;
+	outline: none;
+}
+
+#quizzes .quiz_card button: hover {
+	text-align: center;
+	background-color: lime;
+	border: none;
+	color: white;
+	padding: 10px;
+	width: 120px;
+	border-radius: 20px;
+	opacity: 1.0;
+}
+
+
+/* Creating Quiz Section */
+#create_quiz {
+	margin-top: 100px;
+}
+
+#create_quiz div {
+	text-align: center;
+}
+
+#create_quiz input {
+	margin: 10px;
+	border: none;
+}
+
+#create_quiz input[type="text"] {
+	border-bottom: 1px solid #aaa;
+	text-align: center;
+	width: 30%;
+	font-weight: bold;
+}
+
+#create_quiz input[type="submit"] {
+	color: white;
+	background-color: #1dbaf6;
+	padding: 8px 30px;
+	border-radius: 20px;
+	opacity: 0.7;
+}
+
+#create_quiz input[type="text"]:focus {
+	border-bottom: 2px solid dodgerBlue;
+	text-align: center;
+	width: 31%;
+	box-shadow: 0px 8px 8px -8px grey;
+	opacity: 0.8;
+	font-weight: bold;
+}
+
+#create_quiz input[type="submit"]:hover {
+	color: white;
+	background-color: #1dbaf6;
+	padding: 9px 31px;
+	border-radius: 20px;
+	opacity: 1.0;
+	box-shadow: 0px 0px 5px 3px #ccc;
+}
+
+
+/* Help Section */
+#help {
+	margin-top: 100px;
+}
+
+#help .card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	width: 300px;
+	display: inline-block;
+	margin: 10px;
+	text-align: center;
+}
+
+
+
+/* Feedback section */
+#feedback {
+	margin-top: 100px;
+}
+
+
+
+/* footer section */
+#footer{
+	margin-top: 100px;
+	color: white;
+}
+
+#footer a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#footer a:hover {
+	color: #aaa;
+	text-decoration: underline;
+	display: block;
+}
